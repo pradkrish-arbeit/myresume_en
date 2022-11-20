@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://cuppalabs.github.io/img/coffee14.png" type="image/x-icon" />
+  <title></title>
+  <link href="https://cuppalabs.github.io/css/main.css" rel="stylesheet">
+  <meta name="description" content="">
+  <meta content='' name='keywords' />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="https://cuppalabs.github.io/aboutMe/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:site_name" content="Cuppa Labs" />
+  <meta property="article:publisher" content="https://www.facebook.com/cuppalabs/" />
+  <meta property="article:author" content="https://www.facebook.com/" />
+  <meta property="article:tag" content="Angular 2" />
+  <meta property="article:tag" content="html5" />
+  <meta property="article:tag" content="css3" />
+  <meta property="og:image" content="https://cuppalabs.github.io/img//" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="60">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=929055083862567&autoLogAppEvents=1"></script>
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Donate and keep us going !!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="alert alert-success" role="alert" id="successMsg">
+            Your transaction is successful. Thank you for your support</div>
+          <div class="col-md-7">
+            <div class="row">
+
+              <form class="form-inline donate-form">
+
+                <div class="col-md-8">
+                  <label for="inlineFormInputName2">Amount</label>
+                  <input type="text" id="donateamount" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Enter amount...">
+                </div>
+                <div class="col-md-4">
+                  <label for="inlineFormInputName2">Currency</label>
+                  <select class="form-control" id="donatecurrency">
+                      <option value="USD">USD</option>
+                      <option value="BRL">BRL</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="inlineFormInputName2">Email</label>
+                  <input type="text" id="donateamount" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Enter email address...">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div id="paypal-button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> <div class="container documentation-container about-me page">
+  <div class="row">
+    <div class="col-md-9 offset-md-9 ml-auto mr-auto center-content">
+      <div class="row introduction">
+        <div class="col-md-3">
+          <h5 class="">Sandeep Kumar</h5>
+          <h6 class="role">Front End Engineer & UI Developer</h6>
+          <div>
+            <span>Fullstack Developer</span>
+          </div>
+          <div>
+            <span>Cloud enthusiast</span>
+          </div>
+        </div>
+        <div class="col-md-5 social-profile">
+		 <img src="profile.jpeg" width="135px" height="170px" style="border-radius: 100% !important;margin-left: 110px;margin-top: -10px;"/>
+         <!-- <ul class="contact-detail
+            <li class="col-md-12">
+              <span class="fa fa-linkedin-square"></span
+              ><a target="__blank" href="https://www.linkedin.com/in/pradeeps">-kumar-terli"
+                ><span>linkedin.com/in/pradeep-kumar-terli</span></a
+              >
+            </li>
+            <li class="col-md-12">
+              <span class="fa fa-github"></span
+              ><a target="__blank" href="https://github.com/CuppaLabs"><span>github.com/CuppaLabs</span></a>
+            </li>
+            <li class="col-md-12">
+              <span class="fa fa-link"></span
+              ><a target="__blank" href="https://cuppalabs.github.io"
+                ><span>cuppalabs.github.io</span></a
+              >
+            </li>
+            <li class="col-md-12">
+              <span class="fa fa-map-marker"></span
+              ><a target="__blank" href="https://www.google.com/search?q=Bengaluru"
+                ><span>Bengaluru, India</span></a
+              >
+            </li>
+          </ul>-->
+        </div>
+		 <div class="col-md-3" style="margin-left:40px">
+		  <h5 class="">Nürnberg, Germany</h5>
+          <h6 class="role">Obere Kanalstraße 11, 90429</h6>
+          <div class="email">
+            <!--span class="fa fa-envelope"></span-->
+            <span style="font-size:13px">sandeep.ad.kumar@gmail.com</span>
+          </div>
+          <div class="mobile">
+            <span class="fa fa-mobile-phone"></span>
+            <span style="margin-left: 4px;">+49 17663668061</span>
+          </div>
+		  <div class="mobile">
+            <span class="fa fa-whatsapp" style="color:green"></span>
+            <span>+91 7022048236</span>
+          </div>
+		 
+        </div>
+      </div>
+	    <div class="row introduction" style="margin-left: 36px;">
+		    <h5><span>Currently Working for Client <strong>BAMF(Bundesamt Für Migration Und Flüchtlinge)</strong> from last <strong>5 years</strong></span></h5>
+		  </div>
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-md-8">
+          <h5 class="page-header">WORK EXPERIENCE (11+ Years)</h5>
+          <!--div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">Principal Consultant</h5>
+                <h6 class="organization col">Oracle</h6>
+              </div>
+
+              <ul class="exp-details">
+                <li>
+                  <span>September 2021 - Ongoing</span>
+                </li>
+                <li>
+                  <span>Bengaluru, India</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>
+                  Just started knowing, what I am going to work, learn and earn.
+                </li>
+              </ul>
+            </div>
+          </div-->
+          <!--div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">
+                  Software development engineer
+                </h5>
+                <h6 class="organization col">McAfee</h6>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  <span>April 2019 - September 2021</span>
+                </li>
+                <li>
+                  <span>Bengaluru, India</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>
+                  Frontend Engineer for McAfee MVISION XDR UI (<a
+                    href="https://www.mcafee.com/enterprise/en-in/solutions/xdr.html"
+                    >Product info</a
+                  >) - Proactive actionable intelligence for SecOps
+                </li>
+                <li>
+                  Frontend Engineer for McAfee MVISION Insights UI product (<a
+                    href="https://www.mcafee.com/enterprise/en-in/products/mvision-insights.html"
+                    >Product info</a
+                  >) - Proactive endpoint security platform developed in ReactJS
+                </li>
+                <li>
+                  Responsible for requirement analysis, design and development
+                  of UI.
+                </li>
+                <li>
+                  Development of business modules and re-usable components
+                </li>
+                <li>
+                  Prepare wireframe design for product in collaboration with
+                  architects and product owner
+                </li>
+                <li>
+                  Single handely developed angular front end for Apollo phase 1
+                  project overview.
+                </li>
+              </ul>
+            </div>
+          </div-->
+          <div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">Senior Principal Consultant</h5>
+                <h6 class="organization col">Oracle - BAMF</h6>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  <span>Nov 2017 - Ongoing</span>
+                </li>
+                <li>
+                  <span>Nuremberg, Germany</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>Working as UI front end consultant</li>
+                <li>
+                  Responsible for requirement analysis, design and development
+                  of UI.
+                </li>
+                <li>
+                  UI lead for InGe GUI app , TUM Buchung System , Debev SelfService , Deveg Logviewer
+                </li>
+				<li>
+                  Debev SelfService application designed with 12c server using technologies like GUI, Java, BPEL and services to invoke OIM client interface
+                </li>
+				<li>
+                  TUM Buchung System application is a digital support in the form of an appointment management is required for the admission of a participant to a placement test appointment in central test and registration offices of the new integration procedure for integration courses
+                </li>
+                <li>Good working knowledge in building PaaS extensions using Oracle Visual builder CS. Use of Oracle REST Data Services in VBCS to store and retrieve data.</li>
+                <li>
+                  Lead team initiatives like 'Theme of the month - JavaScript' developed in React Js  and Delivering training sessions on Oracle VBCS Cloud In Oracle
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+          <!--div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">Senior Software Consultant</h5>
+                <h6 class="organization col">Oracle - BAMF</h6>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  <span>July 2017 - Oct 2019</span>
+                </li>
+                <li>
+                  <span>Bengaluru, India</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>
+                  Optimized Web Framework and migrated the framework from JQuery
+                  to AngularJS
+                </li>
+                <li>Developed re-usable AngularJS components.</li>
+                <li>
+                  Responsible for requirement analysis, design and development
+                  of UI.
+                </li>
+                <li>Creator of Heatmap and Layout Management in AngularJS</li>
+              </ul>
+            </div>
+          </div-->
+          <!--div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">Senior UI Developer</h5>
+                <h6 class="organization col">Ericsson</h6>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  <span>March 2016 - June 2016</span>
+                </li>
+                <li>
+                  <span>Bengaluru, India</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>Creator of Analytics dashboard</li>
+                <li>Developed re-usable AngularJS components.</li>
+                <li>Highcharts Angular directives development.</li>
+                <li>Responsive dashboards.</li>
+              </ul>
+            </div>
+          </div-->
+          <div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">IT Analyst / UI Tech Lead</h5>
+                <h6 class="organization col">CitiusTech - Multiplan</h6>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  <span>Jul 2015 - Jul 2017</span>
+                </li>
+                <li>
+                  <span>Mumbai, India</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>
+                  Led UI Team and an individual contributor for several other projects in the account using Oracle ADF , Webcenter portal, SOA and OSB
+                </li>
+                <li>
+                  Worked with Technical Architects group on project proposals,
+                  estimates of design and development efforts.
+                </li>
+                <li>
+                  Actively worked on UI Architecture Design, Documentation and
+                  Proposing best technologies for the projects
+                </li>
+                <li>
+                  Worked on multiple POC’s  on Oracle ADF, Webcenter Portal.
+                </li>
+				<li>
+				  Get opportunity to initiate and lead new technology stack (OFM - Oracle fusion middleware) for the CitiusTech
+				</li>
+				
+              </ul>
+            </div>
+          </div>
+          <div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">UI Developer & Tech Lead</h5>
+                <h6 class="organization col">IGATE</h6>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  <span>May 2014 - JULY 2015</span>
+                </li>
+                <li>
+                  <span>Mumbai, India</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>
+                  Had experience in working at IGATE  on
+                  multiple projects, as UI Front End Technical Lead.
+                </li>
+                <li>
+                  Had been a part of proposal, design and development phases for
+                  two projects.
+                </li>
+                <li>
+                  Conducted training sessions on ADF Framework, Javascript , React and
+                  Bootstrap frameworks.
+                </li>
+                <li>
+                  Worked on Task maanagement mobile App,  RICE (Reports, Interface, Conversions and Extension) Tracker  projects.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row job-details">
+            <div class="col-md-12 col-xs-12">
+              <div class="role-details row">
+                <h5 class="job-title col-md-9">UI Developer</h5>
+                <h6 class="organization col">KPIT-Atkins</h6>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  <span>Feb 2012 - May 2014</span>
+                </li>
+                <li>
+                  <span>Mumbai, India</span>
+                </li>
+              </ul>
+
+              <ul class="pull-left job-description">
+                <li>Worked on Oracle ADF, Oracle WebCenter Content: Imaging, Oracle SOA, Oracle Document Capture and Oracle JDE.</li>
+                <li>Worked on HTML, CSS, JQuery, JavaScript POC's.</li>
+                <li>
+                  Single handedly worked on Alfa Aesar project and strived to make
+                  it a blockbuster project.
+                </li>
+                <li>
+                  Achieved star of the month and star of the quarter awards in
+                  the first year.
+                </li>
+                <li>Provide ADF Training to fresher.</li>
+              </ul>
+            </div>
+          </div>
+		    <div class="row job-details">
+			   <div class="col-md-12 col-xs-12">
+			     Your Sincerely,
+				 <br/>
+				 <img src="sign.jpg" width="125px"/>
+				 <br/>
+			     Sandeep Kumar
+			   </div>
+			</div>
+		  
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="row">
+            <div class="col-md-12 col-xs-12 tech-skills">
+              <h5 class="page-header">Tech Skills</h5>
+			  <span class="badge badge-pill badge-primary">Java</span>
+			  <span class="badge badge-pill badge-primary">Oracle ADF</span>
+			  <span class="badge badge-pill badge-primary">Oracle JET</span>
+			  <span class="badge badge-pill badge-primary">OCI</span>
+			  <span class="badge badge-pill badge-primary">OIC</span>
+			  <span class="badge badge-pill badge-primary">VBCS</span>
+              <span class="badge badge-pill badge-primary">Angular</span>
+              <span class="badge badge-pill badge-primary">ReactJS</span>
+              <span class="badge badge-pill badge-primary">JavaScript</span>
+			  <span class="badge badge-pill badge-primary">NodeJS</span>
+			  <span class="badge badge-pill badge-primary">Python</span>
+			  <span class="badge badge-pill badge-primary">Data Structure</span>
+              <span class="badge badge-pill badge-primary">Bootstrap</span>
+              <span class="badge badge-pill badge-primary">HTML</span>
+              <span class="badge badge-pill badge-primary">CSS</span>
+              <span class="badge badge-pill badge-primary">Fullstack</span>
+              <span class="badge badge-pill badge-primary">Docker</span>
+			  <span class="badge badge-pill badge-primary">kubernetes</span>
+              <span class="badge badge-pill badge-primary">Cloud 	(Oracle, AWS, Azure)</span>
+			  <span class="badge badge-pill badge-primary">DevOps</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <h5 class="page-header">Achievements</h5>
+              <ul class="pull-left job-description">
+                <li>
+                  Post Graduate Program in Cloud Computing(AWS & AZURE) From Simplilearn 
+                </li>
+				 <li>
+                  Oracle Cloud Infrastructure(OCI) Certification
+                </li>
+                <li>
+                   Oracle Certified in Oracle Application Development Framework 11g and webcenter portal
+                </li>
+                <li>Best performer Award for my contribution to CitiusTech-Multiplan.</li>
+                <li>
+                  Getting WOW award and appreciation for handling the project work efficiently and keeping the stakeholder happy
+                </li>
+                <li>Contribution in https://cuppalabs.github.io/CoviTracker Dashboard</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <h5 class="page-header">Blockbuster Projects</h5>
+              <ul class="pull-left job-description">
+                <li>BAMF InGe</li>
+                <li>Multiplan</li>
+                <li>Atkins</li>
+              </ul>
+            </div>
+          </div>
+          <!--div class="row">
+            <div class="col-md-12 col-xs-12">
+              <h5 class="page-header">Open Source Projects</h5>
+              <ul class="pull-left job-description">
+                <li>Angular MultiSelect Dropdown</li>
+                <li>Angular 2 OAuth Social Login</li>
+                <li>Angular 2 Datatable</li>
+                <li>Angular datetimepicker</li>
+                <li>Angular 2 slidemenu</li>
+                <li>Angular Fan menu</li>
+                <li>Javascript datetimepicker</li>
+              </ul>
+            </div>
+          </div-->
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <h5 class="page-header">Education</h5>
+              <div class="college-details">
+                <h6 class="degree">Bachelor of Engineering</h6>
+                <div class="course">Computer Sciende</div>
+                <h6 class="college">D.Y.Patil College of Engineering</h6>
+                <h6 class="college">University of Pune</h6>
+                <ul class="exp-details">
+                  <li style="width: 100%; padding: 0">
+                    <span class="fa fa-map-marker"></span
+                    ><span>Pune, India</span>
+                  </li>
+                  <li style="width: 100%; text-align: left">
+                    <span class="fa fa-calendar"></span><span>2007 - 2011</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="footer">
+    <p>© 2009-2021 &nbsp <a href="https://cuppalabs.github.io" style="color: #fff;font-size: 16px;">Cuppa Labs</a> &nbsp <b>Made in India</b>.
+      All rights reserved and copyrighted to <b>Pradeep Kumar Terli</b></p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script>
+    $(function () {
+      return $(".component-article h1, .component-article h2, .component-article h3, .component-article h4, .component-article h5, .component-article h6").each(function (i, el) {
+        var $el, icon, id, val;
+        $el = $(el);
+        val = $(el).html().split(' ').join('-');
+        id = $el.attr('id', val);
+        if (id) {
+          return $el;
+        }
+      });
+    });
+    $(function () {
+      return $("#navbar-example2 > a").each(function (i, el) {
+        var $el, icon, id, val;
+        $el = $(el);
+        val = '#' + $(el).html().split(' ').join('-');
+        id = $el.attr('href', val);
+        if (id) {
+          return $el;
+        }
+      });
+    });
+    $(function () {
+      return $("table").each(function (i, el) {
+        var $el, icon, id;
+        $el = $(el);
+        $el.addClass('table table-bordered table-responsive');
+      });
+    });
+    function toJSONLocal(date) {
+      var local = new Date(date);
+      local.setMinutes(date.getMinutes() - date.getTimezoneOffset());
+      return local.toJSON().slice(0, 10);
+    }
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+  </script>
+  <script>
+    (function (i, s, o, g, r, a, m) {    
+i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-93566400-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4525567075133342",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+    window.ChatraSetup = {
+        colors: {
+            buttonText: '#ffffff', /* chat button text color */
+            buttonBg: '#e9a142'    /* chat button background color */
+        }
+    };
+    </script>
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'JTyKDCouJ8iRGe4vb';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+</body>
+
+</html>
