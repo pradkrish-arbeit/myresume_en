@@ -30,51 +30,6 @@
 <body data-spy="scroll" data-target="#navbar-example2" data-offset="60">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=929055083862567&autoLogAppEvents=1"></script>
-
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Donate and keep us going !!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="alert alert-success" role="alert" id="successMsg">
-            Your transaction is successful. Thank you for your support</div>
-          <div class="col-md-7">
-            <div class="row">
-
-              <form class="form-inline donate-form">
-
-                <div class="col-md-8">
-                  <label for="inlineFormInputName2">Amount</label>
-                  <input type="text" id="donateamount" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Enter amount...">
-                </div>
-                <div class="col-md-4">
-                  <label for="inlineFormInputName2">Currency</label>
-                  <select class="form-control" id="donatecurrency">
-                      <option value="USD">USD</option>
-                      <option value="BRL">BRL</option>
-                  </select>
-                </div>
-                <div class="col-md-12">
-                  <label for="inlineFormInputName2">Email</label>
-                  <input type="text" id="donateamount" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Enter email address...">
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div id="paypal-button"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 </div> <div class="container documentation-container about-me page">
   <div class="row">
     <div class="col-md-9 offset-md-9 ml-auto mr-auto center-content">
@@ -520,84 +475,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
     crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-  <script>
-    $(function () {
-      return $(".component-article h1, .component-article h2, .component-article h3, .component-article h4, .component-article h5, .component-article h6").each(function (i, el) {
-        var $el, icon, id, val;
-        $el = $(el);
-        val = $(el).html().split(' ').join('-');
-        id = $el.attr('id', val);
-        if (id) {
-          return $el;
-        }
-      });
-    });
-    $(function () {
-      return $("#navbar-example2 > a").each(function (i, el) {
-        var $el, icon, id, val;
-        $el = $(el);
-        val = '#' + $(el).html().split(' ').join('-');
-        id = $el.attr('href', val);
-        if (id) {
-          return $el;
-        }
-      });
-    });
-    $(function () {
-      return $("table").each(function (i, el) {
-        var $el, icon, id;
-        $el = $(el);
-        $el.addClass('table table-bordered table-responsive');
-      });
-    });
-    function toJSONLocal(date) {
-      var local = new Date(date);
-      local.setMinutes(date.getMinutes() - date.getTimezoneOffset());
-      return local.toJSON().slice(0, 10);
-    }
-    function numberWithCommas(x) {
-      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-  </script>
-  <script>
-    (function (i, s, o, g, r, a, m) {    
-i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-93566400-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4525567075133342",
-    enable_page_level_ads: true
-  });
-</script>
-<script>
-    window.ChatraSetup = {
-        colors: {
-            buttonText: '#ffffff', /* chat button text color */
-            buttonBg: '#e9a142'    /* chat button background color */
-        }
-    };
-    </script>
-<script>
-    (function(d, w, c) {
-        w.ChatraID = 'JTyKDCouJ8iRGe4vb';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
-</script>
 </body>
 
 </html>
